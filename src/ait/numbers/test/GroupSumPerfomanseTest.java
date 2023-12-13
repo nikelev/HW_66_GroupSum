@@ -2,11 +2,11 @@ package ait.numbers.test;
 
 import ait.numbers.model.GroupSum;
 
-public class GroupSumPerfomanse {
+public class GroupSumPerfomanseTest {
     private String name;
     private GroupSum groupSum;
 
-    public GroupSumPerfomanse(String name, GroupSum groupSum) {
+    public GroupSumPerfomanseTest(String name, GroupSum groupSum) {
         this.name = name;
         this.groupSum = groupSum;
     }
