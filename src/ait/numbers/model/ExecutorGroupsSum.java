@@ -12,7 +12,7 @@ public class ExecutorGroupsSum extends GroupSum{
 
     @Override
     public int computeSum() {
-        ExecutorService executor = Executors.newFixedThreadPool(numberGroups.length); // Создание пула потоков
+        ExecutorService executor = Executors.newWorkStealingPool(); // Создание пула потоков
         OneGroupSum[] oneGroupSums = new OneGroupSum[numberGroups.length]; // Создание массива объектов OneGroupSum
 
         for (int i = 0; i < numberGroups.length; i++) { // Цикл по всем группам чисел
